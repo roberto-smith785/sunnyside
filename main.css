@@ -119,7 +119,7 @@ button {
 }
 
 .arrow {
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .about .row {
@@ -233,6 +233,12 @@ button {
     color: var(--GrayishBlue);
 }
 
+.hero-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
 .testimonials {
     padding: 5rem;
     background: var(--LightSoftRed);
@@ -331,6 +337,12 @@ button {
     color: var(--White);
 }
 
+@media(max-width:1200px) {
+    .arrow {
+        padding-top: 0rem;
+    }
+}
+
 @media(max-width:991px) {
     .navbar-collapse {
         background: var(--White);
@@ -390,6 +402,11 @@ button {
 }
 
 @media(max-width:500px) {
+    .hero-img {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
     #projects>div {
         width: 50%;
         height: 50vh !important;
@@ -421,8 +438,8 @@ button {
         top: 25%;
     }
     .text-on-box {
-        top: 35%;
-        padding: 4rem;
+        top: 50%;
+        padding: 2rem 4rem;
     }
     .testimonials {
         padding: 2.5rem;
